@@ -1,0 +1,115 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0 10px 0 10px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+}
+
+nav h1, div, h2 {
+    display: inline-block;
+}
+
+nav div {
+    line-height: 70px;
+}
+
+
+main {
+    height: 650px;
+    /* background-color: azure; */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+}
+
+/* main div {
+    border: 1px solid black;
+    box-sizing: border-box;
+} */
+ 
+.one {
+    background-image: url(/assets/item-one.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.two {
+    background-image: url(/assets/item-two.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.three {
+    background-image: url(/assets/item-three.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 7 / 8;
+    grid-row: 4 / 5;
+}
+
+.four {
+    background-image: url(/assets/item-four.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+}
+
+.five {
+    background-image: url(/assets/item-five.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+.six {
+    background-image: url(/assets/item-six.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.seven {
+    background-image: url(/assets/item-seven.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+.eight {
+    background-image: url(/assets/item-eight.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.nine {
+    background-image: url(/assets/item-nine.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+main p {
+    color: red;
+    font-size: 150px;
+    position: absolute;
+    left: 500px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
